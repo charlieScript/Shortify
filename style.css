@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url('fonts/ArchitectsDaughter-Regular.ttf');
+    font-family: Arch;
+}
+
+body {
+    background-color: #A5C4D4;
+    color: #36151E;
+}
+
+nav {
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color:#593F62;
+    color: white;
+    font-family: Arch, sans-serif;
+}
+
+h3 {
+    margin: 1rem 0;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    padding: 1rem;
+    display: flex;
+    background-color: white;
+    margin: 1rem 0;
+    width: 50%;
+    background-color: #8499B1;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 70%;
+}
+
+.input-group input {
+    outline: #593F62;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 0.5rem;
+}
+
+.input-group input:focus {
+    border: 1px solid #593F62;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    width: 20%;
+    height: 33px;
+    border-radius: 5px;
+    border: none;
+    background-color: #36151E;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.3);
+}
+
+input[type="submit"]:hover {
+    box-shadow: none;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 0.5rem;
+    color: red;
+    display: none;
+    text-align: center;
+    transition: display ease-in 200ms;
+}
+
+.output-field {
+    display: flex;
+    width: 50%;
+    padding: 1rem;
+    justify-content: space-between;
+    font-size: larger;
+    align-items: center;
+    background-color: #A5C4D4;
+    border-radius: 5px;
+    border: 1px dashed;
+    display: none;
+}
+
+.shorten {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #36151E;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.3);
+    outline: none;
+}
+
+.output-url {
+    font-family: Arch, sans-serif;
+    color: #36151E;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #36151E;
+    width: 100vw;
+    color: white;
+    font-family: Arch, sans-serif;
+    font-size: large;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        flex-direction: column;
+        padding: 1rem 0.8rem;
+    }
+
+    label {
+        margin-bottom: 1rem;
+    }
+
+    .input-group {
+        width: 100%;
+        margin: 0 0 0.9rem 0;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .output-field {
+        flex-direction: column;
+    }
+
+    .output-field * {
+        margin-bottom: 0.7rem;
+    }
+}
