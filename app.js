@@ -49,7 +49,6 @@ function showSpinner(display) {
 copy.addEventListener('click', () => {
     // get text
     const copiedText = document.querySelector('.output-url');
-    console.log(copiedText)
     // select text
     copiedText.focus()
     copiedText.select()
