@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Shortify</title>
-</head>
-<body>
-    <script src="app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Shortify</title>
+    </head>
+    <body>
+        <nav>
+            <h1>Shortify ✨</h1>
+        </nav>
+        <h3>A basic URL shortening service</h3>
+        <div class="container">
+            <form>
+                <div class="input-group">
+                    <input type="text" id="input-url">
+                    <label for="input-url" id="error-field">Empty field</label> 
+                </div>
+                <input type="submit" value="Shorten it!">
+            </form>
+            <div class="output-field">
+                <p class="url">http://google.com</p>
+                <p class="output-url">http://ututu</p>
+                <button class="shorten">copy</button>
+            </div>
+        </div>
+        <footer>
+            <p>Built By charliescript ❤✌</p>
+        </footer>
+        <script src="app.js"></script>
+    </body>
 </html>
